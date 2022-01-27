@@ -9,7 +9,6 @@
     border: 0px solid #ececec;
     text-align: center;
     line-height: 1.5;
-    height:150%
 }
         
 #cnt {
@@ -18,15 +17,20 @@
     color: #fff;
     padding: 5px;
     border: 0px solid #ececec;
-    text-align: center;
+    text-align: left;
     line-height: 1.5;
-    height:150%
-
 
 }
 #date{
     font-size:large;
 }
+        
+.column {
+ float: left;
+ width: 50%;
+ padding: 10px;
+}
+        
 body{
     background-color: #0bbbcc;
 }
@@ -36,12 +40,26 @@ body{
     <div id="lbl">Buon Pomeriggio 
         <div id="date"> É Giovedi 27/1/2022</div>
     </div>
-    <div id="cnt">
-        <h1>Contatti</h1>
-        <h3>mangari.martina@gmail.com</h3> 
-        <h3>3921254780</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2974.454406003241!2d12.617466252917474!3d41.79697056182995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1325889f6cb82c2d%3A0xb6560e82ceac695b!2sVia%20Marcandreola%2C%2038B1%2C%2000043%20Ciampino%20RM!5e0!3m2!1sit!2sit!4v1643297614989!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="row">
+        <div id="cnt">
+            <div class="column">
+                <h1>Contatti</h1>
+                <h3>mangari.martina@gmail.com</h3> 
+                <h3>3921254780</h3>
+            </div>
+            <div class="column">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2974.454406003241!2d12.617466252917474!3d41.79697056182995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1325889f6cb82c2d%3A0xb6560e82ceac695b!2sVia%20Marcandreola%2C%2038B1%2C%2000043%20Ciampino%20RM!5e0!3m2!1sit!2sit!4v1643297614989!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>    
+        </div>
     </div>
+    
+    
+    
+  
+  
+
+    
+    
     
 <script>
     var weekday = new Array(7);
